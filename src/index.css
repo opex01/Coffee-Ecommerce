@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f97316;
+  --color-primaryDark: #e86f00;
+  --color-lightOrange: #f1dabf;
+  --color-darkGray: #1a1f25;
+  --color-lightGray: #272c35;
+}
+
+.container {
+  @apply mx-auto p-[1rem] sm:p-[2rem];
+}
+
+@layer utilities {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115);
+  }
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 15px #3030307a);
+  }
+}
+
+.input-style {
+  @apply px-4 py-2 border-[1px] border-gray-400 rounded-md;
+}
+
+.primary-btn {
+  @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200 cursor-pointer;
+}
