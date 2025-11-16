@@ -2,12 +2,15 @@
   "name": "ecommerce",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://opex01.github.io/Coffee-Ecommerce/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
